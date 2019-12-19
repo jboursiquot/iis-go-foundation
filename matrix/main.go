@@ -23,9 +23,9 @@ func main() {
 	ops["div"] = div
 	ops["sub"] = sub
 
-	// fmt.Println(ops["add"](1, 2))
-	// fmt.Println(ops["div"](3, 2))
-	// fmt.Println(ops["sub"](4, 3))
+	fmt.Println(ops["add"](1, 2))
+	fmt.Println(ops["div"](3, 2))
+	fmt.Println(ops["sub"](4, 3))
 
 	nums := [][]int{
 		[]int{1, 2},

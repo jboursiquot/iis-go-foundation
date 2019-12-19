@@ -12,9 +12,10 @@ func main() {
 		str = []string{"hello"}
 	}
 	fmt.Println(ReverseText(strings.Join(str, " ")))
+	fmt.Println(ReverseWords("hello world", " "))
 }
 
-// ReverseText reverses text within string
+// ReverseText reverses text within string.
 func ReverseText(s string) string {
 	chars := []rune(s)
 	for i, j := 0, len(chars)-1; i < j; i, j = i+1, j-1 {

@@ -1,11 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"os"
 	"strings"
-
-	"github.com/davecgh/go-spew/spew"
 )
 
 func main() {
@@ -22,7 +21,7 @@ func main() {
 	}
 
 	counts := wordCount(string(bs))
-	spew.Dump(counts)
+	fmt.Println(counts)
 }
 
 func wordCount(s string) map[string]int {

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/jboursiquot/gofoundation/shapes"
 	"fmt"
+	"github.com/jboursiquot/iis-go-foundation/shapes"
 )
 
 func main() {
