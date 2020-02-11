@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/jboursiquot/iis-go-foundation/shapes"
 )
 
 func main() {
-	list := []shapes.IGeoshape{
+	list := []shapes.Shape{
 		&shapes.Rectangle{Label: "R1"},
 		&shapes.Rectangle{Label: "R2"},
 		&shapes.Rectangle{Label: "R3"},
@@ -16,7 +17,7 @@ func main() {
 	render(list)
 }
 
-func render(list []shapes.IGeoshape) {
+func render(list []shapes.Shape) {
 	for i, shape := range list {
 		fmt.Printf("%d - DRAW: %v\n", i, shape.Draw())
 		fmt.Printf("%d - PRNT: %v\n", i, shape.Print())

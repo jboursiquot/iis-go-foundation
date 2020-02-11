@@ -2,12 +2,12 @@ package shapes
 
 import "fmt"
 
-type IGeoshape interface {
+type Shape interface {
 	Draw() string
 	Print() string
 }
 
-type Rectangle struct{
+type Rectangle struct {
 	Label string
 }
 
@@ -20,7 +20,7 @@ func (r *Rectangle) Print() string {
 }
 
 // Circle is a circle.
-type Circle struct{
+type Circle struct {
 	Label string
 }
 
