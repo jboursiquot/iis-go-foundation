@@ -2,21 +2,20 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"strconv"
 )
 
+var hello = []string{"Hello", "Hola", "Bon Jour", "Ciao", "こんにちは"}
+
 func main() {
-	array1 := [3]int{1, 2, 3}
-	array2 := [3]int{1, 2, 3}
-	if array1 == array2 {
-		fmt.Println("equal")
-	} else {
-		fmt.Println("not equal")
+	var index = 1
+	if len(os.Args) > 1 {
+		index, _ = strconv.Atoi(os.Args[1])
 	}
-	// slice1 := []int{1, 2, 3}
-	// slice2 := []int{1, 2, 3}
-	// if slice1 == slice2 {
-	// 	fmt.Println("equal")
-	// } else {
-	// 	fmt.Println("not equal")
-	// }
+
+	if index < 1 || index > len(hello) {
+		index = 1
+	}
+	fmt.Println(hello[index-1])
 }
