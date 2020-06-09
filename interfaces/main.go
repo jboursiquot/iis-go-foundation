@@ -26,7 +26,7 @@ func turnLeft(v Vehicle) {}
 
 func main() {
 	var a Auto
-	var b Train
 	turnLeft(a)
-	turnLeft(b)
+	// var b Train
+	// turnLeft(b)
 }
