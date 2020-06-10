@@ -14,22 +14,34 @@ func main() {
 	}
 
 	end, _ := strconv.Atoi(os.Args[2])
-	seq := genFibSequence(start, end)
+	seq := fibBetween(start, end)
 	fmt.Println(seq)
 }
 
-func genFibSequence(start, end int) []int {
+func fibBetween(min, max int) []int {
 	result := []int{}
-	for n := start; n <= end; n++ {
-		result = append(result, fib(n))
-	}
-	return result
-}
+	n1, n2, fib := 1, 1, 0
 
-// recursive solutions - there are others
-func fib(n int) int {
-	if n <= 1 {
-		return n
+	for {
+		if n1+n2 < min {
+			fib = n1 + n2
+			n1 = n2
+			n2 = fib
+			continue
+		}
+		break
 	}
-	return fib(n-1) + fib(n-2)
+
+	for {
+		if n1+n2 <= max {
+			fib = n1 + n2
+			result = append(result, fib)
+			n1 = n2
+			n2 = fib
+			continue
+		}
+		break
+	}
+
+	return result
 }
