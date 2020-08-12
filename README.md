@@ -4,8 +4,6 @@ Solutions to Go Foundation training labs.
 
 ## Playground Links
 
-### The Basics
-
 - [Hello](https://play.golang.org/p/Zagu3MasFnM)
 - [Swap](https://play.golang.org/p/1uaCqi21f7o)
 - [Variadic](https://play.golang.org/p/lgVuI5DiFib)
@@ -51,3 +49,9 @@ Solutions to Go Foundation training labs.
 - [Interfaces](https://play.golang.org/p/x5C0FnjhO77)
 - [Duck Typing Example](https://play.golang.org/p/rKQwUW3hiQR)
 - [Empty Slices](https://play.golang.org/p/odA65W4gkME)
+
+## Next Steps
+- [Tour of Go](https://tour.golang.org)
+- [How to Write Go Code](https://golang.org/doc/code.html)
+- [Effective Go](https://golang.org/doc/effective_go.html)
+- [Go.dev](https://go.dev/)
