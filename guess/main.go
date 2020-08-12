@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"strconv"
 	"time"
 )
 
@@ -22,17 +21,8 @@ func main() {
 
 		fmt.Print("Guess a number between 0 and 100: ")
 
-		var s string
-		fmt.Scanln(&s)
-		if len(s) == 0 {
-			continue
-		}
-
-		guessedNum, err := strconv.Atoi(s)
-		if err != nil {
-			fmt.Println("Error converting your number. Try again.")
-			continue
-		}
+		var guessedNum int
+		fmt.Scanln(&guessedNum)
 
 		if guessedNum == winningNum {
 			fmt.Println("You win!")
